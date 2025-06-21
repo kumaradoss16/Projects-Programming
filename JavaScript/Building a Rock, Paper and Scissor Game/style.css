@@ -1,0 +1,118 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+*, *::before, *::after {   /*::before and ::after are CSS pseudo-elements that allow you to insert content before or after the content of an HTML element. */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-blue: #0a0a23;
+    --white: #ffffff;
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    text-align: center;
+    color: var(--white);
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+}
+
+h1 {
+    margin: 45px 0 40px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 120px;
+    height: 34px;
+    margin: 30px;
+    color: var(--very-dark-blue);
+    background-color: var(--golden-yellow);
+    background-image: linear-gradient(#fecc42, #ffac33);
+    border-color: var(--golden-yellow);
+    border-width: 3px;
+    font-family: 'Press Start 2P', 'Orbitron', monospace, sans-serif;
+}
+
+.btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
+    color: #D50B8B;
+}
+
+.rules-container {
+    padding: 10px 0;
+    border: 5px solid var(--yellow);
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+    font-family: 'Games', sans-serif;
+    font-size: 26px;
+    box-shadow: 0 0 10px 4px #48abe0;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px 4px #48abe0; }
+    50% { box-shadow: 0 0 20px 8px #48abe0; }
+    100% { box-shadow: 0 0 10px 4px #48abe0; }
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+summary {
+    color: green;
+}
+
+.rules-container ul {
+    color: blue;
+}
+
+.rules-container p {
+    margin: 10px 0;
+}
+
+@media (min-width: 760px) {
+    .rules-container {
+        width: 60%;
+    }
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    font-size: 1.2rem;
+}
+
+.score {
+    font-weight: 500;
+}
+
+.results-container {
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+#winner-msg {
+    margin-top: 25px;
+}
+
+#reset-game-btn {
+    display: none;
+    margin: 20px auto;
+}
+
+.player-winner {
+    color: blue;
+}
+
+.computer-winner {
+    color: red;
+}
