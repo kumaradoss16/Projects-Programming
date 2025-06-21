@@ -1,0 +1,147 @@
+body {
+  background: #121219;
+  color: #dddddd;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #DDDDDD;
+}
+
+.bg-steel {
+  background-color: #282830;
+  border: 1px solid #444450;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #FFF8E3;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #282830;
+  padding: 10px 20px;
+  border: 1px solid #282830;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.list-group li{
+  background: #282830;
+  border: 1px solid #444444;
+}
+
+.article-title {
+  color: #F5F5F5;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #444444;
+}
+
+.article-metadata a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.form-group{
+    font-size: 20px;
+}
+
+.form-group legend{
+    font-size: 30px;
+    border-color: #444444;
+}
+
+.text-muted{
+    font-size:17px;
+}
+
+/* Change input field color */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background: #282830; /* Set the desired color */
+  border: 1px solid #444444;
+  color: #dddddd;
+}
+
+.legend-border {
+    border-bottom: 2px solid #444444;
+}
+
+.modal-title{
+    color: #dddddd;
+}
+
+.modal-content {
+    border: 1px solid #444444;
+    background-color: #282830;
+}
+
+.content-section{
+    border: 1px solid #444450;
+}
+
+.home{
+    font-size: 21px;
+}
+
+.form-check {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute children evenly across the container */
+    align-items: center; /* Center items vertically */
+}
+
+.form-check-forgot {
+    margin-left: auto; /* Push the "Forgot Password?" link to the right */
+}
+
+
+
+
+
+
+
+
