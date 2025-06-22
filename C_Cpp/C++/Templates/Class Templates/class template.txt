@@ -1,0 +1,38 @@
+In C++, class templates allow you to define classes with generic types, enabling the same class 
+to work with different data types. This can be highly useful for creating data structures and 
+algorithms that are type-agnostic.
+
+Syntax of a Class Template
+The basic syntax for defining a class template is:
+
+template <typename T>
+class ClassName {
+public:
+    // Member variables and methods
+    T memberVariable;
+    
+    ClassName(T value);
+    void display();
+};
+
+Default Template Arguments: You can provide default values for template parameters
+
+template <typename T = int>
+class Example {
+    // Class members
+};
+
+
+- template <typename T>: This declares a template where T is a placeholder for the data type.
+- ClassName: This is the name of the class template.
+- T: This is the type parameter used in the class.
+
+
+Generic Pair Class:-
+   A generic Pair class is a template-based class in C++ that can hold two values of possibly 
+different types. The class is generic, meaning that it can work with any data types, specified
+when creating objects of the class.
+
+Generic Container Class:-
+   A generic Container class is a template class in C++ that can store one or more elements of 
+a single type. It is flexible and can be adapted to hold various types of data.

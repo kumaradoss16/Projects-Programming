@@ -1,0 +1,19 @@
+Variadic Template:-
+   Variadic templates are a powerful feature in C++ that allow you to create templates with a variable number of template arguments. 
+Variadic arguments are very similar to arrays in C++. We can easily iterate through the arguments, find the size(length) of the template, 
+can access the values by an index, and can slice the templates too. 
+
+Key Parts
+1. Template Parameter Pack: A special kind of template parameter that can accept zero or more arguments.
+2. Parameter Pack Expansion: A way to use or process all the arguments in a parameter pack.
+
+Syntax
+A variadic template can take zero or more template arguments. The syntax involves a template parameter pack which is denoted by '...'.
+
+template<typename... Args>                    // Args is a parameter pack
+return_type function_name(Args... args) {     // args is a function parameter pack
+    // Function implementation
+}
+
+- typename... Args: This declares a parameter pack named Args that can hold any number of types.
+- Args... args: This expands the parameter pack into individual arguments.

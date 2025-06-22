@@ -1,0 +1,14 @@
+In C++, function templates allow you to write generic functions that can operate on different data types without repeating 
+the same code for each type. This is particularly useful for functions like sorting, swapping, and searching that can be
+applied to many data types.
+
+Syntax of a Function Template
+The basic syntax of a function template in C++ is:
+
+template <typename T>
+return_type function_name(T parameter1, T parameter2) {
+    // Function body
+}
+
+- typename T (or class T) defines a template parameter T that will be replaced by a specific data type when the function is called.
+- T can represent any data type (int, float, double, string, etc.).
