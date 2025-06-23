@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("images/bg1.png");
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.img-logo {
+    height: 90px;
+    margin-left: 40px;
+}
+
+.top {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 100px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #999;
+    position: relative;
+    z-index: 1;
+}
+
+.foot {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.foot a {
+    color: #999;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+.footlay {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0 ;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.footlay li {
+    list-style: none;
+}
+
+.footlist {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.footlist .footlink {
+    text-decoration: underline;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* .footlink:hover {
+    text-decoration: underline;
+} */
+
+.login {
+    margin: 0 auto;
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 30px 70px 60px 70px;
+}
+
+.login h1 {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 100%;
+    height: 45px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    outline: transparent;
+    border: none;
+    text-indent: 18px;
+}
+
+.input input {
+    font-size: 1rem;
+    color: #999;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 101%;
+    padding: 13px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    font-size: 1.50rem;
+    cursor: pointer; 
+    border-radius: 5px;
+}
+
+.rem {
+    display: flex;
+    flex-direction: row;
+    gap: 134px;
+    width: 104%;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 14.4px;
+    margin-left: -3px;
+}
+
+.signup {
+    margin-top: 80px;
+    color: #999;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup a:hover, .help:hover, .google a:hover {
+    text-decoration: underline;
+}
+
+.google {
+    margin-top: 15px;
+}
+
+small {
+    color: #999;
+}
+
+.google a {
+    color: #0071eb;
+    text-decoration: none;
+}
+

@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.light-theme {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Dark text */
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+header a.logo {
+    display: block;
+}
+
+header .logo svg {
+    fill: #e50914;
+    height: 37px;
+}
+
+header div+div {
+    text-align: right;
+}
+
+a.theme-toggle {
+    position: relative;
+}
+
+.theme-toggle svg{
+    height: 33px;
+    position: absolute;
+    top: -4px;
+    left: -50px;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+a.theme-toggle svg:active {
+    fill: #000000;
+}
+
+header a.button {
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 17px;
+    border-radius: 3px;
+}
+
+header a.button:hover {
+    background-color: #9b0011;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.select select {
+    border: 1px solid #555;
+    padding: 7px; /* Padding for text */
+    padding-left: 35px;
+    padding-right: 30px;  /* Space for the dropdown icon */
+    font-size: 16px;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.select::after {
+    content: "▼";
+    position: absolute;
+    right: 28px;
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust for vertical alignment */
+    pointer-events: none;
+    font-size: 8px;
+    color: #fff;
+}
+
+select option{
+    color: #000;
+}
+
+header div.select svg, footer div.select svg {
+    height: 20px;
+    fill: #fff;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.select select:focus {
+    border: 2px solid #fff;
+    outline: none;
+}
+
+div.content {
+    position: relative;
+}
+
+div.gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0, rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, .8) 100%);
+    position: absolute;
+    inset: 0;
+}
+
+div.content div.background img {
+    max-width: 100%;
+    opacity: 0.6;
+}
+
+div.content div.content1 {
+    margin-top: 95px;
+    margin-bottom: 95px;
+    max-width: 655px;
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin-left: -327.5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+div.content1 h1, div.content1 h2, div.content1 h3 {
+    font-weight: normal;
+}
+
+div.content h1 {
+    font-size: 3.125rem;
+}
+
+div.content1 h2 {
+    font-size: 1.62rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+div.content1 h3 {
+    font-size: 1.2rem;
+}
+
+div.cta form {
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+
+div.cta input {
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid grey;
+    border-radius: 3px;
+    outline: none;
+}
+
+div.cta input ~ span {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+
+/* div.cta input:focus {
+    padding-top: 19px;
+    padding-bottom: 11px;
+    border-color: aliceblue;
+} */
+
+div.cta input:focus ~ span {
+    top: 4px;
+    font-size: .8rem;
+}
+
+div.cta button {
+    font-size: 1.625rem;
+    padding: 7px 26px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+}
+
+div.cta button:hover {
+    background-color: darkred;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    padding: 70px 45px;
+    align-items: center;
+    border-top: 8px solid #222;
+}
+
+section.last {
+    border-bottom: 8px solid #222;
+}
+
+section div.texts h1 {
+    font-size: 3.125rem;
+}
+
+section div.texts p {
+    font-size: 1.625rem;
+}
+
+div.texts.three, div.texts.one {
+    margin-left: 70px;
+}
+
+div.texts.two, div.texts.four {
+    margin-right: 100px;
+}
+
+.media {
+    position: relative;
+    top: -20px;
+    left: 200px;
+}
+
+.media.s1 img {
+    width: 400px;
+    position: relative;
+    right: 80px;
+    top: 20px;
+}
+
+.media.s1 video {
+    width: 292.5px;
+    position: absolute;
+    top: 82px;
+    right: 365px;
+    z-index: -1;
+}
+
+.media.s3 img {
+    width: 400px;
+    position: relative;
+    top: 20px;
+    left: -160px;
+}
+
+.media.s3 video {
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    left: -90px;
+    z-index: -1;;
+}
+
+.media.s4{
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.kids img {
+    width: 400px;
+    position: absolute;
+    right: 300px;
+    bottom: -180px;
+}
+
+.mobile {
+    width: 350px;
+    position: absolute;
+    left: -125px;
+    bottom: -150px;
+}
+
+.last .media  {
+    margin-top: 120px;
+    margin-bottom: 160px;
+}
+
+section:nth-child(even) div.texts {
+    order: 2;
+}
+
+section div.download {
+    border: 2px solid #888;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background-color: #000;
+    grid-template-columns: max-content 1fr max-content;
+}
+
+section div.download img {
+    height: 75px;
+    width: auto;
+}
+
+div.faq {
+    padding: 70px 30px;
+    border-bottom: 8px solid #222;
+}
+
+div.faq h1 {
+    font-size: 3.125rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.questions {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+div.question {
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+
+div.question svg {
+    width: 30px;
+    height: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+div.question .header {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+div.question div.answer {
+    display: none;
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    /* transition: all 0.2s ease; */
+}
+
+div.question input[type="checkbox"] {
+    display: none;
+}
+
+/* div.question input[type="checkbox"]:checked ~ div.answer {
+    padding: 30px 30px;
+    max-height: 600px;
+} */
+
+/* div.question input[type="checkbox"]:checked ~ .header svg {
+    transform: rotate(180deg);
+} */
+
+/* Default state of the SVG */
+.size-6 {
+    transition: transform 0.3s ease;
+}
+
+/* Rotated state of the SVG */
+.rotated {
+    transform: rotate(180deg) !important;
+}
+
+.header svg {
+    transition: transform 0.3s ease;
+}
+
+div.faq h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+div.faq form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer {
+    position: relative;
+    width: 80%;
+    /* background: #000; */
+    margin-bottom: 80px;
+}
+
+footer .text {
+    position: relative;
+    top: 60px;
+    left: 225px;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: -75px;
+}
+
+.footer .footer-row {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 2rem; */
+    padding: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.footer-col .links {
+    margin-top: 40px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    color: #999;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer .text a {
+    color: #999;
+}
+
+.footer-down select {
+    border: 1px solid #555;
+    padding: 7px; /* Padding for text */
+    padding-left: 35px;
+    padding-right: 30px;  /* Space for the dropdown icon */
+    font-size: 16px;
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+footer div.select {
+    position: relative;
+    top: 20px;
+    left: 147px;
+    overflow: hidden; /* Prevents any overflow */
+    width: 120px; /* Set a width */
+    height: 35px; /* Set a height if needed */
+    padding: 0; /* Optional: remove padding */
+}
+
+footer .select::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust for vertical alignment */
+    pointer-events: none;
+    font-size: 8px;
+    /* color: #fff; */
+}
+
+footer p {
+    margin-top: 60px;
+    margin-left: 147px;
+    color: #999;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Change arrow for light theme */
+.light-theme .footer-dropdown::after {
+    color: #000; 
+    font-size: 10px;
+}
+
+.light-theme .select1:focus {
+    border: 2px solid #000;
+    outline: none;
+}

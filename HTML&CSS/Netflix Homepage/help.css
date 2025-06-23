@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: #221f1f;
+    --grey: rgba(128, 128, 128, .4);
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Netflix Sans",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    color: var(--font-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 26px 26px;
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid lightgrey;
+}
+
+header a.logo {
+    display: block;
+    position: relative;
+    top: -3px;
+}
+
+header svg {
+    fill: #e50914;
+    height: 25px;
+    margin-left: 20px;
+    padding-right: 15px;
+    border-right: 1px solid gray;
+}
+
+div.header a.help {
+    position: absolute;
+    top: 25px;
+    left: 170px;
+    color: #000;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .header a.help:hover {
+    text-decoration: underline !important;
+}
+
+
+header div+div {
+    text-align: right;
+}
+
+header .buttons a.button1 {
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    right: 150px;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid rgba(128, 128, 128, .7);
+    padding: 5px 17px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+header .buttons a.button1:hover {
+    background-color: #dedede;
+}
+
+header .buttons a.button2 {
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 17px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+header .buttons a.button2:hover {
+    background-color: darkred;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section .input h1 {
+    text-align: center;
+    line-height: 300px;
+    font-size: 40px;
+    color: #000;
+    margin-top: 60px;
+}
+
+section .input form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -100px;
+}
+
+section .input form input {
+    width: 600px;
+    padding: 12px 16px 12px 52px;
+    font-size: 16px;
+     /* Set initial border color and width */
+    border: 2px solid transparent;
+     /* Gradient border */
+    border-image: linear-gradient(to right, #e50914 -0.08%, #c94ff5 81.14%, #5b79f1 99.92%);
+    border-image-slice: 1;
+    outline: none;
+    background-color: #fff;
+
+}
+        
+section .input form svg {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    width: 26px;
+}
+
+section div.container .popular {
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 395px;
+    width: 580px;
+    height: 48px;
+    line-height: 25px;
+    text-align: center;
+}
+
+section div.container p span{
+    color: #000000B3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+div.container p a {
+    color: #000000B3;
+    font-size: 16px;
+}
+
+div.container p a:hover {
+    color: #000;
+} 
+
+div.container .content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+div.container .content a {
+    margin-top: 170px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+div.content a:hover {
+    text-decoration: underline;
+}
+
+div.content a svg {
+    display: block;
+    position: relative;
+    left: 43px;
+    top: 12px;
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+}
+
+.content a:hover svg {
+    animation: moveDown 1s forwards; /* Trigger the animation on hover */
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    25% {
+        transform: translateY(10px); /* First move down */
+    }
+    50% {
+        transform: translateY(0); /* Second move down */
+    }
+    75% {
+        transform: translateY(10px); /* Move back up slightly */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
+/* 
+div.account {
+    margin-top: 110px;
+    width: 600px;
+    height: 335px;
+    position: relative;
+    left: 400px;
+    border: 1px solid lightgrey;
+}
+
+div.account svg.account-icon {
+   fill: #e50914;
+   position: absolute;
+   top: 25px;
+   left: 30px;
+}
+
+div.account strong {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 27px;
+    left: 70px;
+    font-size: 18px;
+}
+
+div.categories {
+    position: relative;
+    top: 100px;
+    left: 25px;
+}
+
+div.categories div {
+    display: inline;
+}
+
+div.categories h4 {
+    position: relative;
+    color: var(--font-color);
+    font-size: 16px;
+}
+
+div.categories div .down {
+    display: inline;
+    position: absolute;
+    width: 24px;
+    height: inherit;
+    top: -2px;
+    left: 530px;
+}
+
+div.category .related {
+    list-style: none;
+    
+    margin-left: -2px;
+}
+
+div.category .related li {
+    margin-bottom: 10px;
+}
+
+div.category .related li svg {
+    position: relative;
+    top: 5px;
+}
+
+div.categories div .category {
+    padding: 0 100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+div.categories input[type="checkbox"] {
+    display: none;
+}
+
+div.categories input[type="checkbox"]:checked ~ div.category {
+    padding: 30px 30px;
+    max-height: 600px;
+}
+
+div.question input[type="checkbox"]:checked ~ .header svg {
+    transform: rotate(180deg);
+} */
+
+div.container1 {
+    margin: 100px auto;
+    width: 600px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+
+div.container1 > div {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+}
+
+div.container1 .content1 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.container1 .icon {
+    fill: #e50914;
+    margin-left: 8px;
+    margin-top: -2px;
+}
+
+div.container1 strong {
+    margin-left: 20px;
+    font-size: 18px;
+    /* padding-bottom: 20px; */
+}
+
+div.category strong.option {
+    margin-left: 20px;
+    font-size: 18px;
+    /* padding-bottom: 20px; */
+}
+
+div.bottom{
+    border-bottom: 1px solid lightgray;
+    width: 95%;
+    margin: 0 auto;
+}
+
+div.category {
+    position: relative;
+    top: -5px;
+    left: 15px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+
+div.category label {
+    font-weight: 600;
+}
+
+div.category .down {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -3px;
+    right: -17px; 
+    /* pointer-events: none; */
+}
+
+div.category .header {
+    cursor: pointer;
+}
+
+div.category label.border-bottom {
+    display:block;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+div.category label.border-bottom::after {
+    content: "";
+    position: absolute;
+    left: -3px; /* Move the border to the left */
+    bottom: 0;
+    width: 103.5%; /* Adjust the width of the border */
+    border-bottom: 1px solid var(--grey);
+}
+
+div.category .sub-category {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+}
+
+div.sub-category .related {
+    list-style: none;
+    margin-left: 2px;
+    width: 550px;
+    margin-bottom: -10px;
+}
+
+div.sub-category .related li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+div.sub-category .related li.first {
+    margin-top: 25px;
+}
+
+div.sub-category .related svg {
+    /* position: relative; */
+    /* top: -10px; */
+    width: 16px;
+    height: 24px;
+}
+
+ul.related li a {
+    margin-top: 5px;
+    margin-left: 12px;
+    color: #221f1f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul.related li a:hover {
+    text-decoration: underline;
+}
+
+div.category input[type="checkbox"] {
+    display: none;
+}
+
+div.category input[type="checkbox"]:checked ~ label.border-bottom::after {
+    border-bottom: none;
+}
+
+div.category input[type="checkbox"]:checked ~ div.sub-category {
+    max-height: 400px; /* Adjust as needed */
+}
+
+div.category input[type="checkbox"]:checked ~ .header svg {
+    transform: rotate(180deg);
+    
+}
+
+div.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px; 
+    margin-left: -40px;
+}
+
+div.container2 .content2 .bottom {
+    display: block;
+    border-bottom: 1px solid var(--grey);
+    width: 108%;
+    padding-bottom: 10px;
+}
+
+div.container2 .links a {
+    position: relative;
+    font-weight: 600;
+    top: -5px;
+}
+
+div.content2 .need {
+    margin: 70px auto;         /* Center horizontally with margin auto */
+    text-align: center;        /* Center text inside */
+    width: fit-content;        /* Adjust width according to content */
+}
+
+div.need h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+div.need .contact {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 70px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div.need .contact:hover{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+footer {
+    position: relative;
+    width: 1349px;
+    height: 330px;
+    padding: 0 0 48px;
+    top: -80px;
+}
+
+.select{
+    position: absolute;
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 45px;
+}
+
+.select select {
+    color: grey;
+    border: 1px solid #555;
+    padding: 13px 90px 13px 15px;
+    font: 17px Arial;
+    background: transparent;
+    font-weight: 700;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 200px;
+}
+
+.select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    pointer-events: none;
+    color: grey;
+}
+
+footer ul {
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+footer li {
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+footer ul li a {
+    color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+footer .footer .footer-links {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
