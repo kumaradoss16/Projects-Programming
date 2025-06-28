@@ -13,7 +13,7 @@ async function checkWeather(city) {
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
     } else {
-        var data = await response.json();   // 'data' variable store weather information for particular city.\
+        var data = await response.json();   // 'data' variable store weather information for particular city.
 
         // update the city, temperature, humidity and wind value by api.
         document.querySelector(".city").innerHTML = data.name;   
