@@ -40,7 +40,8 @@ A clean and responsive web application that displays current weather conditions 
 
 To run this project locally, follow these steps:
 
-1.  **Clone the repository:**git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+1.  **Clone the repository:**
+      git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
     
 2.  **Get an API Key:**
     
@@ -52,7 +53,7 @@ To run this project locally, follow these steps:
 *   Generate your API key.
     
 
-1.  **Update API Key in** script.js**:**
+3.  **Update API Key in** script.js**:**
     
 
 *   Open script.js.
