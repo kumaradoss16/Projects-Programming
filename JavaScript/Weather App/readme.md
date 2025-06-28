@@ -32,6 +32,9 @@ A clean and responsive web application that displays current weather conditions 
 **📸 Screenshots**
 ------------------
 
+![Screenshot](https://github.com/user-attachments/assets/fa960648-3cf8-4154-bfdd-feac63590550)
+
+
 **⚙️ Setup and Installation**
 -----------------------------
 
