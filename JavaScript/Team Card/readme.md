@@ -41,6 +41,11 @@ A simple and interactive web application that displays cricket team statistics a
 *   style.css: Contains all the CSS rules for styling the application, including layout, colors, typography, responsive adjustments, and hover effects.
     
 *   script.js: Contains the core JavaScript logic for managing team data, filtering players, handling theme toggling, and the task management features.
+
+*   .
+├── index.html
+├── style.css
+└── script.js
     
 
 ⚙️ Setup and Installation
