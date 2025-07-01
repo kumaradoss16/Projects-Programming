@@ -40,8 +40,6 @@ A responsive web-based ToDo application that allows users to add, edit, and dele
 📁 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── index.html  ├── style.css  └── script.js   `
-
 *   index.html: The main HTML file containing the structure of the ToDo app, including the task form, task display area, and the confirmation modal.
     
 *   style.css: Contains all the CSS rules for styling the application, defining its layout, colors, typography, and responsive behavior.
@@ -54,9 +52,10 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 To run this project locally, follow these simple steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+2.  cd YOUR_REPO_NAME (Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)
     
-2.  **Open in Browser:**
+3.  **Open in Browser:**
     
     *   Simply open the index.html file in your web browser. No server setup is required as it's a client-side application.
         
