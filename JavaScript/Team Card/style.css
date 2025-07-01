@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+/* Define Global CSS Variables (Light Theme Defaults) */
+:root {
+    /* Body & General Text */
+    --color-bg-body: #f0f2f5;
+    /* Light grey background */
+    --color-text-body: #333333;
+    /* Dark text for light theme */
+    --color-primary-text: #1a202c;
+    /* Darker text for titles/labels in light theme */
+
+    /* Card Specifics */
+    --color-card-bg: #B6B09F;
+    /* White card background */
+    --color-card-border: #e0e0e0;
+    /* Light grey border */
+    --color-card-heading: #1a202c;
+    /* Dark heading for cards */
+    --color-card-paragraph: #4a5568;
+    /* Slightly lighter paragraph text */
+
+    /* Position Colors (Adjusted for better visibility on light background) */
+    --color-position-batsman: #CC0000;
+    /* Stronger Red */
+    --color-position-bowler: #0066CC;
+    /* Stronger Blue */
+    --color-position-wicketkeeper: #008000;
+    /* Stronger Green */
+    --color-position-all-rounder: #8A2BE2;
+    /* Blue Violet */
+
+    /* Theme Toggle Button */
+    --color-toggle-bg: #ffffff;
+    --color-toggle-border: #cccccc;
+    --color-toggle-text: #666666;
+    --color-toggle-hover-text: #000000;
+}
+
+/* Dark Theme Overrides */
+body.dark-theme {
+    /* Body & General Text */
+    --color-bg-body: #1a202c;
+    /* Dark charcoal background */
+    --color-text-body: #e2e8f0;
+    /* Light grey text for dark theme */
+    --color-primary-text: #edf2f7;
+    /* Lighter text for titles/labels in dark theme */
+
+    /* Card Specifics */
+    --color-card-bg: #2d3748;
+    /* Darker grey for cards */
+    --color-card-border: #4a5568;
+    /* Medium grey border */
+    --color-card-heading: #edf2f7;
+    /* Lighter heading for cards */
+    --color-card-paragraph: #cbd5e0;
+    /* Lighter paragraph text */
+
+    /* Position Colors (Adjusted for better visibility on dark background) */
+    --color-position-batsman: #FF6347;
+    /* Tomato */
+    --color-position-bowler: #6495ED;
+    /* Cornflower Blue */
+    --color-position-wicketkeeper: #7CFC00;
+    /* Lawn Green */
+    --color-position-all-rounder: #BA55D3;
+    /* Medium Orchid */
+
+    /* Theme Toggle Button */
+    --color-toggle-bg: #2d3748;
+    --color-toggle-border: #4a5568;
+    --color-toggle-text: #a0aec0;
+    --color-toggle-hover-text: #ffffff;
+}
+
+/* Universal Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-body);
+    /* Apply body text color */
+    font-family: 'Inter', sans-serif;
+    /* Ensure font-family is here */
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth theme transition */
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 120px;
+    border: 4px solid black;
+}
+
+/* Header */
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 55px;
+    right: 130px;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-toggle-bg);
+    border: 1px solid var(--color-toggle-border);
+    color: var(--color-toggle-text);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--color-toggle-hover-text);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: grey;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+.teams {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    gap: 10px;
+    align-items: center;
+    /* margin-left: -180px; */
+}
+
+.option-label {
+    white-space: nowrap;
+    /* Prevents the label text from wrapping */
+}
+
+select#team-select {
+    width: 120px;
+    font-size: 16px;
+}
+
+/* Titles, Labels, Team Stats */
+.title span {
+    cursor: pointer;
+    display: inline-block;
+    /* Essential for applying transforms to individual letters */
+    position: relative;
+    transform-origin: center center;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-out, text-shadow 0.2s ease-out;
+    will-change: transform, color, text-shadow;
+    /* Optimize for animation */
+    margin: 2rem 0;
+    font-family: "Bungee Tint", sans-serif;
+    font-size: 50px;
+    text-shadow: 0 0 5px rgba(136, 208, 208, 0.5);
+}
+
+.title span:hover {
+    transform: scale(1.5);
+}
+
+.options-label,
+.team-stats {
+    color: var(--color-primary-text);
+}
+
+.team-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    margin: 2.5rem 0;
+    font-weight: 700;
+}
+
+p span {
+    color: #0066CC;
+}
+
+.options-label {
+    font-size: 1.2rem;
+}
+
+/* Player Cards Container */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Player Card */
+.player-card {
+    background-color: var(--color-card-bg);
+    /* Use card background variable */
+    padding: 1.3rem;
+    margin: 1.2rem;
+    width: 300px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add base shadow */
+    border: 1px solid var(--color-card-border);
+    /* Use card border variable */
+    transition: all 0.3s ease;
+    /* Smooth transitions for all properties */
+}
+
+.cards:hover> :not(:hover) {
+    opacity: 0.3;
+}
+
+.player-card:hover {
+    transform: scale(1.1);
+    /* Slightly reduced scale for smoother hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* Player Card Headings */
+.player-card h2 {
+    color: var(--color-card-heading);
+    /* Use card heading color variable */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Player Card Paragraphs */
+.player-card p {
+    color: var(--color-card-paragraph);
+    /* Use card paragraph color variable */
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+/* Position Specific Colors (using variables) */
+p span.position-batsman {
+    color: var(--color-position-batsman);
+    font-weight: 600;
+}
+
+p span.position-bowler {
+    color: var(--color-position-bowler);
+    font-weight: 600;
+}
+
+p span.position-wicketkeeper {
+    color: var(--color-position-wicketkeeper);
+    font-weight: 600;
+}
+
+p span.position-all-rounder {
+    color: var(--color-position-all-rounder);
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .team-stats {
+        flex-direction: column;
+    }
+
+    .title span {
+        font-size: 25px;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        height: 33px;
+        width: 33px;
+        font-size: 0.8rem;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 40px;
+    }
+
+    .teams {
+        justify-content: center;
+    }
+
+    .teams,
+    .team-stats p {
+        margin-bottom: 10px;
+    }
+
+    .team-stats {
+        margin-bottom: 40px;
+    }
+}
