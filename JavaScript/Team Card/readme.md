@@ -48,8 +48,9 @@ A simple and interactive web application that displays cricket team statistics a
 
 To run this project locally, follow these steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+2.  cd YOUR_REPO_NAME (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub username and repository name.)_
     
-2.  **Open in Browser:**
+3.  **Open in Browser:**
     
     *   Simply open the index.html file in your preferred web browser.
