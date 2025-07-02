@@ -24,9 +24,7 @@ This file sets up the basic structure of the web page.
     
 *   **Key Elements**:
     
-    *   Decimal to Binary Converter
-        
-        : The main title of the application.
+    *   Decimal to Binary Converter: The main title of the application.
         
     *   : Contains the label, input field (id="number-input"), and button (id="convert-btn") for user input.
         
