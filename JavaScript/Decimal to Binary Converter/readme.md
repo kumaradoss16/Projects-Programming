@@ -28,8 +28,6 @@ A web-based application that converts decimal numbers to their binary equivalent
 📁 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── index.html  ├── style.css  └── script.js   `
-
 *   index.html: The main HTML file, containing the input field, convert button, result display, and the container for the call stack animation.
     
 *   style.css: Defines the visual presentation of the application, including the styling for the input elements, buttons, result display, and the animated call stack frames.
@@ -42,9 +40,10 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 To run this project locally, follow these simple steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+2.  cd YOUR_REPO_NAME (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub username and repository name.)
     
-2.  **Open in Browser:**
+3.  **Open in Browser:**
     
     *   Simply open the index.html file in your preferred web browser. No server setup is required as it's a client-side application.
         
