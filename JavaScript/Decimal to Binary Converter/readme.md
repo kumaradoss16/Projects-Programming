@@ -40,8 +40,6 @@ This file dictates the visual appearance and responsiveness of the converter.
 *   **Purpose**: Styles the HTML elements to create an intuitive and visually appealing user interface. It also includes styles for the animation frames to simulate the push and pop operations on the call stack.
     
 *   **Key Styling Aspects**:
-    
-    *   **Typography**: Uses Google Fonts (Edu NSW ACT Hand Pre, Inter, Press Start 2P, Ubuntu) for a distinct look.
         
     *   **Layout**: Employs Flexbox for responsive centering and arrangement of elements, especially for the input container and the main body.
         
