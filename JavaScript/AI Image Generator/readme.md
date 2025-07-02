@@ -41,9 +41,6 @@ A modern and responsive web application that allows users to generate images fro
 
 📁 Project Structure
 --------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── index.html  ├── style.css  └── script.js   `
-
 *   index.html: The main HTML file that structures the AI Image Generator, including the header, prompt input area, model/count/ratio selectors, and the image gallery grid.
     
 *   style.css: Contains all the CSS rules for styling the application. This includes global variables for theming, responsive adjustments, custom styles for inputs and buttons, and animations for loading states and hover effects.
@@ -56,29 +53,18 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 To run this project locally, follow these steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+2.  cd YOUR_REPO_NAME (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub username and repository name.)
     
-2.  **Get a Hugging Face API Key:**
+3.  **Get a Hugging Face API Key:**
     
-    *   Go to [Hugging Face](https://huggingface.co/settings/tokens).
+    *   Go to Hugging Face Website: https://huggingface.co/settings/tokens
         
     *   Sign up or log in.
         
     *   Generate a new access token (ensure it has "read" permissions, or "write" if you plan to use models that require it, though "read" is usually sufficient for inference).
         
     *   **Important:** Keep your API key secure and do not expose it publicly in client-side code if deploying to production without a proxy. For local development, it's fine.
-        
-3.  **Update API Key in script.js:**
-    
-    *   Open the script.js file.
-        
-    *   const API\_KEY = "hf\_YOUR\_HUGGING\_FACE\_API\_KEY\_HERE"; // Replace this with your actual API key
-        
-    *   Replace "hf\_YOUR\_HUGGING\_FACE\_API\_KEY\_HERE" with the API key you obtained from Hugging Face.
-        
-4.  **Open in Browser:**
-    
-    *   Simply open the index.html file in your preferred web browser.
         
 
 💡 Usage
