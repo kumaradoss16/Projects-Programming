@@ -6,7 +6,7 @@ A simple and elegant web application that converts integers into their Roman num
 ✨ Features
 ----------
 
-*   **Integer to Roman Numeral Conversion:** Converts positive integers (1 to 3999) into standard Roman numerals.
+*   **Integer to Roman Numeral Conversion:** Converts positive integers (1 to 10000) into standard Roman numerals.
     
 *   **Input Validation:**
     
@@ -14,7 +14,7 @@ A simple and elegant web application that converts integers into their Roman num
         
     *   Ensures the input is a valid number (no decimals or scientific notation).
         
-    *   Verifies that the number is within the valid range for Roman numerals (1 to 3999).
+    *   Verifies that the number is within the valid range for Roman numerals (1 to 10000).
         
 *   **Clear Output:** A dedicated "Clear" button to reset the input field and output display.
     
@@ -36,8 +36,6 @@ A simple and elegant web application that converts integers into their Roman num
 📁 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── index.html  ├── style.css  └── script.js   `
-
 *   index.html: The main HTML file that structures the Roman Numeral Converter, including the input form, convert button, clear button, and the display area for results or error messages.
     
 *   style.css: Contains all the CSS rules for styling the application. It defines the visual appearance, responsiveness, and specific styles for valid output and error messages.
@@ -50,9 +48,9 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 To run this project locally, follow these simple steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.git
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
     
-2.  cd YOUR\_REPO\_NAME _(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+2.  cd YOUR_REPO_NAME (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub username and repository name.)
     
 3.  **Open in Browser:**
     
@@ -62,7 +60,7 @@ To run this project locally, follow these simple steps:
 💡 Usage
 --------
 
-1.  **Enter a Number:** Type an integer between 1 and 3999 into the input field.
+1.  **Enter a Number:** Type an integer between 1 and 10000 into the input field.
     
 2.  **Convert:** Click the "Convert" button or press Enter.
     
