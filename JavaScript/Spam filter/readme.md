@@ -46,8 +46,6 @@ A client-side web application built with HTML, CSS, and JavaScript that attempts
 📁 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── index.html  ├── style.css  └── script.js   `
-
 *   index.html: The main HTML file that structures the Spam Filter, including the header, message input area (textarea), check button, and the result display paragraph.
     
 *   style.css: Contains all the CSS rules for styling the application. This includes global variables for color themes, responsive adjustments, and specific styles for the input, button, and result display.
@@ -60,9 +58,10 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 To run this project locally, follow these simple steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.gitcd YOUR\_REPO\_NAME_(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+2.  cd YOUR\_REPO\_NAME (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub username and repository name.)
     
-2.  **Open in Browser:**
+3.  **Open in Browser:**
     
     *   Simply open the index.html file in your preferred web browser. No server setup is required as it's a client-side application.
         
