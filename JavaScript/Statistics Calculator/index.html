@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>STATISTICS CALCULATOR</h1>
+    <hr>
+    <p class="description">Enter a list of comma-separated numbers.</p>
+    <form onsubmit="calculate(); return false;">
+        <label for="numbers">Numbers:</label>
+        <input type="text" id="numbers" name="numbers" />
+        <button type="submit">Calculate</button>
+    </form>
+    <div class="results">
+        <p class="bold">Mean: <span id="mean"></span></p>
+        <p class="bold">Median: <span id="median"></span></p>
+        <p class="bold">Mode: <span id="mode"></span></p>
+        <p class="bold">Range: <span id="range"></span></p>
+        <p class="bold">Variance: <span id="variance"></span></p>
+        <p class="bold">Standard Deviation: <span id="standardDeviation"></span></p>
+    </div>
+    <div class="definition">
+        <ul>
+            <li>
+                <p>
+                    The <dfn>mean</dfn> of a list of numbers is the average, calculated by
+                    taking the sum of all numbers and dividing that by the count of numbers.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The <dfn>median</dfn> of a list of numbers is the number that appears in
+                    the middle of the list, when sorted from least to greatest.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The <dfn>mode</dfn> of a list of numbers is the number that appears most
+                    often in the list.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The <dfn>range</dfn> of a list of numbers is the difference between the
+                    largest and smallest numbers in the list.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The <dfn>variance</dfn> of a list of numbers measures how far the values
+                    are from the mean, on average.
+                </p>
+            </li>
+            <li>
+                <p>The <dfn>standard deviation</dfn> of a list of numbers is the square
+                    root of the variance.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
