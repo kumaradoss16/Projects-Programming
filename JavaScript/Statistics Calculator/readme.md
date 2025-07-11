@@ -52,9 +52,9 @@ A simple web-based application that calculates key statistical measures for a gi
 
 To run this project locally, follow these simple steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.git
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
     
-2.  cd YOUR\_REPO\_NAME _(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+2.  cd YOUR_REPO_NAME (Replace YOUR_USERNAME and YOUR_REPO_NAME with your actual GitHub username and repository name.)
     
 3.  **Open in Browser:**
     
