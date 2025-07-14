@@ -56,11 +56,8 @@ A simple, client-side web-based spreadsheet application built primarily with Jav
 📁 Project Structure
 --------------------
 
-*   index.html: The main HTML file that sets up the basic page structure, including the
-    
-    title and the main div#container where the spreadsheet grid is dynamically built by JavaScript.
-    ===============================================================================================
-    
+*   index.html: The main HTML file that sets up the basic page structure, including the title and the main div#container where the spreadsheet grid is dynamically built by JavaScript.
+   
 *   style.css: Contains all the CSS rules for styling the spreadsheet. This includes display: grid for the main container, styles for cell labels, input fields, and general typography.
     
 *   script.js: The core of the application. It contains:
@@ -89,9 +86,9 @@ A simple, client-side web-based spreadsheet application built primarily with Jav
 
 To run this project locally, follow these simple steps:
 
-1.  git clone https://github.com/YOUR\_USERNAME/YOUR\_REPO\_NAME.git
+1.  git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
     
-2.  cd YOUR\_REPO\_NAME _(Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)_
+2.  cd YOUR\_REPO\_NAME (Replace YOUR\_USERNAME and YOUR\_REPO\_NAME with your actual GitHub username and repository name.)
     
 3.  **Open in Browser:**
     
