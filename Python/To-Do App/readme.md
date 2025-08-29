@@ -30,7 +30,8 @@ This project demonstrates **lists**, **loops**, **functions**, and user interact
         - Click on main.py
         - Click "Raw" button
         - Right-click → "Save As" to download the file
-  or Click on https://download-directory.github.io paste the link https://github.com/kumaradoss16/Projects-Programming/new/main/Python/To-Do%20App, and download the "Python To-Do CLI App" directory.
+          
+or Click on https://download-directory.github.io paste the link https://github.com/kumaradoss16/Projects-Programming/new/main/Python/To-Do%20App, and download the "Python To-Do CLI App" directory.
 
 Right-click → "Save As" to download the file
 
