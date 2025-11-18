@@ -100,7 +100,7 @@ int main()
 
     print_separator('=', 65);
 
-    // Step 4: Check IP Before VPN Connection
+    // Step 4: Check IP After VPN Connection
     printf("\n[Step 1] Checking current public IP address...\n");
     if (fetch_public_ip(ip_after) != 0)
     {
@@ -109,7 +109,7 @@ int main()
     }
     printf("Public IP before VPN: %s\n", ip_after);
 
-    // Step 5: Check DNS Servers Before VPN Connection
+    // Step 5: Check DNS Servers After VPN Connection
     printf("\n[Step 2] Checking cuurent DNS Servers...\n");
     if (fetch_dns_servers(dns_after) != 0)
     {
@@ -120,7 +120,7 @@ int main()
         printf("DNS Servers (After VPN): \n%s\n", dns_after);
     }
 
-    // Step 6: Check VPN Network Adapter Before VPN Connection
+    // Step 6: Check VPN Network Adapter After VPN Connection
     printf("\n[Step 3] Scanning for VPN network adapters...\n");
     detect_vpn_adapter(vpn_adapter_after);
     if (strlen(vpn_adapter_after) > 0)
