@@ -347,7 +347,7 @@ This project is designed for educational purposes and demonstrates core banking 
 **Username**: Admin
 **Password**: `SecureAdmin@2025`
 
-⚠️ **Security Warning**: Change the default admin password immediately after first login via the Admin Panel → Change Admin Password option.[^1]
+⚠️ **Security Warning**: Change the default admin password immediately after first login via the Admin Panel → Change Admin Password option.
 
 ***
 
