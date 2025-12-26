@@ -1,0 +1,21 @@
+
+    ==================================================
+                  ATM TRANSACTION RECEIPT
+    ==================================================
+    Date/Time      : 26-12-2025 15:03:47
+    Transcation ID : 00000005
+
+    Account        : ******0000
+    Name           : Ben
+
+    Transaction    : WITHDRAW
+    Amount         : 1200.00
+    Balance After  : 3300.00
+
+    ATM Cash After: 998800.00
+Daily Withdraw: 1200.00
+
+    ==================================================
+            Thank you for using our ATM service!
+    ==================================================
+    
