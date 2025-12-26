@@ -23,7 +23,7 @@ Files created automatically:
 import sqlite3  # For database operations
 import os      # For checking file existence
 import re    # For regular expressions
-import hashlib  # Fpr SHA-256 PIN hashing (security)
+import hashlib  # For SHA-256 PIN hashing (security)
 from datetime import datetime, date   # For transaction timestamps
 from getpass import getpass   # For masked PIN input (no echo)
 from typing import Dict, Any, Optional, Tuple   # Type hints
@@ -1084,4 +1084,5 @@ if __name__ == "__main__":
     print("Change it immediately via Admin Panel!")
     print("=" * 70)
     main_menu()
+
 
