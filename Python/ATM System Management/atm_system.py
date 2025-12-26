@@ -37,7 +37,6 @@ MIN_BALANCE = 500   # Minimum balance required in account
 DEFAULT_DAILY_WITHDRAW_LIMIT = 20000.0   # Default daily withdrawal limit per account
 DEFAULT_ATM_CASH_POOL = 1000000.0   # Default total cash available in ATM
 RECEIPTS_FOLDER = "receipts"
-#8f3c5e7d4b2a1f9e6d8c7b5a4e3d2c1b0a9f8e7d6c5b4a3e2d1c0b9a8f7e6d5c
 
 # Name validation rules
 MAX_NAME_LENGTH = 50
@@ -115,6 +114,7 @@ def mask_account_number(account_number: str) -> str:
     if len(account_number) <= 4:
         return "****"
     return "*" * (len(account_number) - 4) + account_number[-4:]
+    
 
 # -------------------- DB HELPERS --------------------
 
@@ -801,6 +801,7 @@ def admin_unlock_account():
     
     print("=" * 70)
 
+
 def admin_view_all_accounts():
     """Admin function to view all accounts."""
     print("\n" + "=" * 70)
@@ -833,6 +834,7 @@ def admin_view_all_accounts():
     print("-" * 70)
     print(f"Total Accounts: {len(accounts)}")
     print("=" * 70)
+
 
 def admin_view_atm_cash():
     """View current ATM cash pool."""
@@ -1082,3 +1084,4 @@ if __name__ == "__main__":
     print("Change it immediately via Admin Panel!")
     print("=" * 70)
     main_menu()
+
